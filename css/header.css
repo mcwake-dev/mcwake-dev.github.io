@@ -1,0 +1,32 @@
+header {
+    background: #1976D2;
+    display: grid;
+    grid-template-areas: "brand brand brand links";
+}
+
+header img {
+    vertical-align: middle;
+    padding-bottom: 10px;
+}
+
+header a {
+    text-decoration: none;
+    font-family: Urbanist;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+}
+
+header #brand {
+    display: grid;
+    grid-area: brand;
+}
+
+header # {
+    display: grid;
+    grid-area: links;
+}
+
+header nav a {
+    font-size: 1em;
+}

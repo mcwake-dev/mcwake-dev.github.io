@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Urbanist:400,400i,700");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;    
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    font-family: Roboto, sans-serif;
+    padding-top: 1rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+main {
+    padding-top: 10px;
+    padding: 4rem 1rem;
+}
+
+footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    background-color: darkslategrey;
+    padding: 1rem;
+    color: lightgray;
+}
+
+  
+  
