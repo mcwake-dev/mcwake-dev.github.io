@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Urbanist:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&display=swap');
+
+:root {
+    --dark-color: #3500D3;
+    --mid-color: #240090;
+    --footer-background: #282828;
+    --light-color: #EDF5E1;
+    --main-background: #000000;
+}
 
 * {
     box-sizing: border-box;
@@ -14,11 +22,14 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto;
-    font-family: Roboto, sans-serif;
+    font-family: "Overpass Mono", sans-serif;
     padding-top: 1rem;
+    background: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    color: var(--light-color);
 }
 
-header {
+body > header {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,17 +38,92 @@ header {
     height: 4rem;
 }
 
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #2E9CCA;
+}
+
+header #brand {
+    grid-area: brand;
+    width: 100%;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    margin: 0.2rem;
+    padding: 0.2rem 0.2rem;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skew(-20deg);
+}
+
 main {
     padding: 4rem 1rem;
+    display: grid;
+    grid-template-areas:   "about projects external";
+    align-items: center;
+    justify-items: space-around;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        background-color: black;
+    }
+    
+    main {
+        padding: 6rem 1rem;
+        grid-template-areas: "about"
+        "projects"
+        "external";
+    }
+}
+    
+
+.main-link a {
+    text-decoration: underline;
+    text-decoration-color: #2E9CCA;
+    color: var(--light-color);
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.main-link a:hover {
+    border: 1px solid #29648A;
+    border-radius: 20px;
+}
+
+#about {
+    grid-area: about;
+    display: grid;
+    justify-items: center;
+}
+
+#projects {
+    grid-area: projects;
+    display: grid;
+    justify-items: center;
+}
+
+#external {
+    grid-area: external;
+    display: grid;
+    justify-items: center;
 }
 
 footer {
     grid-row-start: 2;
     grid-row-end: 3;
     text-align: center;
-    background-color: darkslategrey;
+    background-color: var(--footer-background);
     padding: 1rem;
-    color: lightgray;
+}
+
+.big-icon {
+    font-size: 15rem;
+    padding-bottom: 1rem;
 }
 
   

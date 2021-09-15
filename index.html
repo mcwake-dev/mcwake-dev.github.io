@@ -12,43 +12,37 @@
     <link rel="manifest" href="img/favicons/manifest.json">
     <link rel="icon" href="img/favicons/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="css/header.css" />
     <script src="https://kit.fontawesome.com/e0ba2e9060.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <section id="brand">
-            <a href="/">
-                <img src="img/favicons/favicon-32x32.png" alt="MCW Logo" /> Matthew C Wake - Portfolio
-            </a>
-        </section>
-        <nav id="links">
-            <a aria-current="page" class="skewed-nav-link" href="#about-me">
-                <span class="link-text">About Me</span>
-            </a>
-            <a aria-current="page" class="skewed-nav-link" href="#projects">
-                <span class="link-text">Projects</span>
-            </a>
-            <a href="https://www.codewars.com/users/mcsqwu" class="skewed-nav-link">
-                <span class="link-text">
-                    <img src="https://www.codewars.com/users/mcsqwu/badges/micro" alt="CodeWars badge" /> CodeWars
-                </span>
-            </a>
-            <a href="https://github.com/mcwake-dev" class="skewed-nav-link">
-                <span class="link-text">
-                    <i class="fa fa-github"></i> Github
-                </span>
-            </a>
-            <a href="https://www.freecodecamp.org/fcc2ad59fa6-ae7f-4044-b8f5-8bcc81813930" class="skewed-nav-link">
-                <span class="link-text">
-                    <i class="fab fa-free-code-camp"></i> FreeCodeCamp
-                </span>
-            </a>
-        </nav>
+        <a href="/">
+            [matthew@mcw-pc ~]$ ls /home/mcw
+        </a>
     </header>
     <main>
-        
+        <section id="about" class="main-link">
+            <a aria-current="page" href="#about-me">
+                <i class="big-icon far fa-user"></i>
+                <br />
+                About Me
+            </a>
+        </section>
+        <section id="projects" class="main-link">
+            <a aria-current="page" href="#projects">
+                <i class="big-icon far fa-save"></i>
+                <br />
+                Projects
+            </a>
+        </section>
+        <section id="external" class="main-link">
+            <a aria-current="page" href="#external">
+                <i class="big-icon fas fa-link"></i>
+                <br />
+                External Links
+            </a>
+        </section>
     </main>
     <footer>
         Copyright &copy; Matthew C Wake 2021 - All Rights Reserved
