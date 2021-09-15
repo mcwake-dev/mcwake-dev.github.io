@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    min-height: 100%;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr auto;
     font-family: Roboto, sans-serif;
@@ -24,10 +24,10 @@ header {
     left: 0;
     width: 100%;
     padding: 1rem;
+    height: 4rem;
 }
 
 main {
-    padding-top: 10px;
     padding: 4rem 1rem;
 }
 

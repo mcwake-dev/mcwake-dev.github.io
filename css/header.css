@@ -1,12 +1,12 @@
 header {
     background: #1976D2;
     display: grid;
-    grid-template-areas: "brand brand brand links";
+    grid-template-areas: "brand links";
+    justify-content: space-between;
 }
 
 header img {
     vertical-align: middle;
-    padding-bottom: 10px;
 }
 
 header a {
@@ -14,19 +14,45 @@ header a {
     font-family: Urbanist;
     font-weight: bold;
     color: white;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 header #brand {
-    display: grid;
     grid-area: brand;
+    width: 100%;
 }
 
-header # {
-    display: grid;
+header #links {
     grid-area: links;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav a {
-    font-size: 1em;
+    font-size: 1.5rem;
+    background: darkslategrey;
+    margin: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skew(-20deg);
+}
+
+header nav a:hover {
+    color: darkslategrey;
+    background: white;
+}
+
+header nav a .link-text {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skew(20deg);
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+header nav a .link-text img {
+    padding-top: 0rem;
 }
