@@ -1,0 +1,57 @@
+:root {
+    --bad-highlight-background: red;
+    --bad-highlight-color: white;
+    --good-highlight-background: var(--blue-highlight);
+    --good-highlight-color: white;
+}
+
+main {
+    padding: 2rem 1rem;
+    grid-template-areas: "banner"
+                         "mission"
+                         "personal";
+}
+
+#mission {
+    grid-area: mission;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-bottom: 2rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+#mission p {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+#mission p.solution {
+    margin-bottom: 2rem;
+}
+
+#personal {
+    grid-area: personal;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+#personal a {
+    color: var(--light-color);
+    text-decoration: underline;
+    text-decoration-color: var(--blue-highlight);
+}
+
+.highlight-bad {
+    background: var(--bad-highlight-background);
+    color: var(--bad-highlight-color);
+    font-size: 1.8rem;
+    padding: 0.2rem;
+}
+
+.highlight-good {
+    background: var(--good-highlight-background);
+    color: var(--good-highlight-color);
+    font-size: 1.8rem;
+    padding: 0.2rem;
+}
