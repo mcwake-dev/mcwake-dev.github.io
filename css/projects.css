@@ -1,0 +1,9 @@
+main {
+    padding: 2rem 1rem;
+    grid-template-areas: "banner"
+                         "projects";
+}
+
+#projects {
+    grid-area: projects;
+}
