@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faSave, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
 
 import styles from '../components/About.module.css';
 
@@ -14,36 +14,18 @@ export default function About() {
                 </p>
             </section>
             <section id={styles.mission}>
-                <p>
-                    I'm constantly looking for ways a task can be completed better, faster and smarter
-                </p>
-                <p>
-                    From turning complex travel visa application processing regulations
-                    into a simple Choose Your Own Adventure
-                </p>
-                <p>
-                    To transforming a <span className="highlight-bad">cryptic and illegible task view</span>
-                </p>
-                <p className="solution">
-                    Into a <span className="highlight-good">user-friendly big-screen live dashboard</span>
-                </p>
-                <p>
-                    I spot <span className="highlight-bad">problems</span>
-                </p>
-                <p>
-                    Take the <span className="highlight-good">initiative</span>
-                </p>
-                <p>
-                    And <span className="highlight-good">build solutions</span>
-                </p>
-                <p>
-                    That make a <span className="highlight-good">real impact</span>
-                </p>
+                <header>Mission Statement</header>
+                I'm constantly looking for ways a task can be completed better, faster and smarter
+                from turning complex travel visa application processing regulations
+                into a simple Choose Your Own Adventure-style question and answer interface
+                to transforming a cryptic and illegible task view
+                into a user-friendly big-screen live dashboard
+                I spot problems, take the initiative, and build solutions that make a real impact.
             </section>
             <section id={styles.personal}>
-                <span className="medium">
+                <header>
                     Some Facts About Me
-                </span>
+                </header>
                 <ul>
                     <li>
                         I have 10 guinea pigs. They do code review in return for pea flakes.
@@ -57,22 +39,22 @@ export default function About() {
                         presented a conference paper in Spain.
                     </li>
                     <li>
-                        I sometimes listen to Metal, like this: <a
-                            href="https://www.youtube.com/watch?v=qnzurkSGBCs&list=PLjB-MA1-wfwjeVwlW2RgCFzsfTH3y-Lnk"><i
-                                className="fab fa-youtube"></i> Metal Playlist</a>
-                    </li>
-                    <li>
-                        I sometimes listen to classical, like this: <a
-                            href="https://www.youtube.com/playlist?list=PLjB-MA1-wfwiAT_RAdAZUcIlb4PbfgmHP"> <i
-                                className="fab fa-youtube"></i> Classical Playlist</a>
-                    </li>
-                    <li>
-                        And I sometimes listen to K-pop (I'm sorry...), like this: <a
-                            href="https://www.youtube.com/watch?v=SNo7jTKggs4&list=PLjB-MA1-wfwgy2FjyrmP-1VnA_RynuWKd"><i
-                                className="fab fa-youtube"></i> K-Pop Playlist</a>
+                        I sometimes listen to:
+                        <br />
+                        <a
+                            href="https://www.youtube.com/watch?v=qnzurkSGBCs&list=PLjB-MA1-wfwjeVwlW2RgCFzsfTH3y-Lnk">
+                            <FontAwesomeIcon icon={faYoutubeSquare} /> Metal Playlist</a>
+                        <br />
+                        <a
+                            href="https://www.youtube.com/playlist?list=PLjB-MA1-wfwiAT_RAdAZUcIlb4PbfgmHP">
+                            <FontAwesomeIcon icon={faYoutubeSquare} /> Classical Playlist</a>
+                        <br />
+                        <a
+                            href="https://www.youtube.com/watch?v=SNo7jTKggs4&list=PLjB-MA1-wfwgy2FjyrmP-1VnA_RynuWKd">
+                            <FontAwesomeIcon icon={faYoutubeSquare} /> K-Pop Playlist</a>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </section >
+        </div >
     )
 }
