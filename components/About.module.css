@@ -1,15 +1,26 @@
-#main {
+#container {
     padding: 2rem 1rem;
-    grid-template-areas: "banner"
-                         "mission"
-                         "personal";
+    grid-template-areas: "banner  banner"
+                         "mission personal";
+}
+
+#banner {
+    grid-area: banner;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#banner header {
+    font-size: 5rem;
+    color: var(--blue-highlight);
+}
+
+#banner p {
+    font-size: 2rem;
 }
 
 #mission {
     grid-area: mission;
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-bottom: 2rem;
     justify-items: center;
     justify-content: center;
 }
@@ -25,8 +36,6 @@
 
 #personal {
     grid-area: personal;
-    padding-left: 6rem;
-    padding-right: 6rem;
 }
 
 #personal a {

@@ -16,15 +16,11 @@
     margin: 0;
 }
 
-html, body, #container {
+html, body {
     height: 100vh;
 }
 
-
-
-#container {
-    display: grid;
-    grid-template-rows: 1fr auto;
+body {
     font-family: "Overpass Mono", sans-serif;
     padding-top: 1rem;
     background: url('../public/img/background.jpg');
@@ -45,26 +41,47 @@ html, body, #container {
     background: rgba(0, 0, 0, 0.7);
 }
 
-#main-header a {
+#main {
+    margin-top: 4rem;
+}
+
+a {
     text-decoration-color: var(--blue-highlight);
     color: white;
     font-weight: bold;
+}
+
+a:hover {
+    text-decoration-color: red;
+}
+
+#main-header a {
     font-size: 2rem;
 }
 
-@media only screen and (max-width: 1400px) {    
+@media only screen and (max-width: 950px) {    
     #main-header {
         grid-template-areas: "brand"
                              "nav";
     }
 
-    #nav a {
-        display: block;
+    #brand {
         text-align: center;
     }
+
+    #nav {
+        margin-top: 2rem;
+    }
+    
+    #nav a {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    #main {
+        margin-top: 8rem;
+    }
 }
-
-
 
 #brand {
     grid-area: brand;
@@ -85,23 +102,10 @@ html, body, #container {
     padding: 1rem;
 }
 
-#main {
-    padding: 4rem 1rem;
-    display: grid;
-    grid-template-areas: "banner  banner    banner"
-                         "about   projects  external";
-    align-items: center;
-}
-
-#banner {
-    grid-area: banner;
-    display: grid;
-    text-align: center;
-}
-
 #main-footer {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1rem;

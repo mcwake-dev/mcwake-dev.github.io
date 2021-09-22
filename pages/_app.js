@@ -9,7 +9,7 @@ config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div id="container">
+    <div>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
       <header id="main-header">
         <div id="brand">
           <a href="/">
-            [matt@mcw-pc ~]$ cd /home/mcw
+            [matt@mcw-portfolio ~]$
           </a>
         </div>
         <nav id="nav">
@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
             <a>Projects</a>
           </Link>
           <Link href="/external">
-            <a>External Links</a>
+            <a>External</a>
           </Link>
         </nav>
       </header>
@@ -43,10 +43,9 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </main>
       <footer id="main-footer">
-        Copyright &copy; Matthew C Wake 2021 - All Rights Reserved - Built using Next.js
+        Copyright &copy; Matthew C Wake 2021 - All Rights Reserved - Built using <a href="https://nextjs.org/">Next.js</a>
       </footer>
     </div>
-    
   )
 }
 

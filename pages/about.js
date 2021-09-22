@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faSave, faLink } from '@fortawesome/free-solid-svg-icons'
 
@@ -5,27 +6,20 @@ import styles from '../components/About.module.css';
 
 export default function About() {
     return (
-        <div>
-            <section id="banner">
-                <span className="huge">About Me</span>
-                <span className="medium">
-                    I'm <span className="highlight-underline">Matt</span>, and <span className="highlight-underline">I solve
-                        problems</span>.
-                </span>
+        <div id={styles.container}>
+            <section id={styles.banner}>
+                <header>About Me</header>
+                <p>
+                    I'm <Link href="/about"><a>Matt</a></Link>, and <Link href="/projects"><a>I solve problems</a></Link>.
+                </p>
             </section>
-            <section id="mission">
+            <section id={styles.mission}>
                 <p>
-                    I'm constantly looking for ways a task can be completed
-                </p>
-                <p className="solution">
-                    <span className="highlight-good">better</span>, <span className="highlight-good">faster</span> and <span
-                        className="highlight-good">smarter</span>
+                    I'm constantly looking for ways a task can be completed better, faster and smarter
                 </p>
                 <p>
-                    From turning <span className="highlight-bad">complex travel visa application processing regulations</span>
-                </p>
-                <p className="solution">
-                    Into a simple <span className="highlight-good">Choose Your Own Adventure</span>
+                    From turning complex travel visa application processing regulations
+                    into a simple Choose Your Own Adventure
                 </p>
                 <p>
                     To transforming a <span className="highlight-bad">cryptic and illegible task view</span>
@@ -46,7 +40,7 @@ export default function About() {
                     That make a <span className="highlight-good">real impact</span>
                 </p>
             </section>
-            <section id="personal">
+            <section id={styles.personal}>
                 <span className="medium">
                     Some Facts About Me
                 </span>
