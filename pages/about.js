@@ -46,12 +46,14 @@ export default function About() {
                             <FontAwesomeIcon icon={faYoutubeSquare} /> Metal Playlist</a>
                         <br />
                         <a
-                            href="https://www.youtube.com/playlist?list=PLjB-MA1-wfwiAT_RAdAZUcIlb4PbfgmHP">
+                            href="https://www.youtube.com/watch?v=zBGnXhvn2Q4&list=PLjB-MA1-wfwiAT_RAdAZUcIlb4PbfgmHP">
                             <FontAwesomeIcon icon={faYoutubeSquare} /> Classical Playlist</a>
                         <br />
                         <a
                             href="https://www.youtube.com/watch?v=SNo7jTKggs4&list=PLjB-MA1-wfwgy2FjyrmP-1VnA_RynuWKd">
-                            <FontAwesomeIcon icon={faYoutubeSquare} /> K-Pop Playlist</a>
+                            <FontAwesomeIcon icon={faYoutubeSquare} /> K-Pop Playlist</a>*
+                        <br />
+                        * With headphones - I'm not <em>that</em> evil...
                     </li>
                 </ul>
             </section >

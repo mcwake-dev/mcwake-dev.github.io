@@ -1,0 +1,10 @@
+#banner {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+#banner header {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--blue-highlight);
+}
