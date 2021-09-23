@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 import styles from '../../components/Project.module.css';
 
-export default function Project({ frontmatter: { title, data, cover_image }, slug, content }) {
+export default function Project({ frontmatter: { title, excerpt, tech_used }, content }) {
     return (
         <div id={styles.container}>
             <section id={styles.banner}>
@@ -14,14 +14,21 @@ export default function Project({ frontmatter: { title, data, cover_image }, slu
                     <a>&lt;-- Back to Projects</a>
                 </Link>
                 <header>{title}</header>
-                
+                <p>
+                    <em>{excerpt}</em>
+                </p>
+                <br />
+                <aside>
+                    <b>Tech Used: </b> {tech_used}
+                </aside>
             </section>
-            <section id={styles.content}>
+            <section id={styles.content} dangerouslySetInnerHTML={{__html: marked(content, {breaks: true})}}>
 
             </section>
-            <section id={styles.back}>
-
-            </section>
+            <br />
+            <Link href="/projects">
+                <a>&lt;-- Back to Projects</a>
+            </Link>
         </div>
     )
 }
