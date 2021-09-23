@@ -10,12 +10,12 @@ export default function About() {
             <section id={styles.banner}>
                 <header>About Me</header>
                 <p>
-                    I'm <Link href="/about"><a>Matt</a></Link>, and <Link href="/projects"><a>I solve problems</a></Link>.
+                    I&apos;m <Link href="/about"><a>Matt</a></Link>, and <Link href="/projects"><a>I solve problems</a></Link>.
                 </p>
             </section>
             <section id={styles.mission}>
                 <header>Mission Statement</header>
-                I'm constantly looking for ways a task can be completed better, faster and smarter
+                I&apos;m constantly looking for ways a task can be completed better, faster and smarter
                 from turning complex travel visa application processing regulations
                 into a simple Choose Your Own Adventure-style question and answer interface
                 to transforming a cryptic and illegible task view
@@ -31,7 +31,7 @@ export default function About() {
                         I have 10 guinea pigs. They do code review in return for pea flakes.
                     </li>
                     <li>
-                        I'm a decent cook - I was known as the 'Chief Diet Ruiner' while working in the Civil Service, but
+                        I&apos;m a decent cook - I was known as the &lsquo;Chief Diet Ruiner&rsquo; while working in the Civil Service, but
                         now focus on tasty but healthy food, leaning towards Korean-style cuisine.
                     </li>
                     <li>
@@ -53,7 +53,7 @@ export default function About() {
                             href="https://www.youtube.com/watch?v=SNo7jTKggs4&list=PLjB-MA1-wfwgy2FjyrmP-1VnA_RynuWKd">
                             <FontAwesomeIcon icon={faYoutubeSquare} /> K-Pop Playlist</a>*
                         <br />
-                        * With headphones - I'm not <em>that</em> evil...
+                        * With headphones - I&apos;m not <em>that</em> evil...
                     </li>
                 </ul>
             </section >

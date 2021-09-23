@@ -23,9 +23,11 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <header id="main-header">
         <div id="brand">
-          <a href="/">
-            [matt@mcw-portfolio ~]$
-          </a>
+          <Link href="/">
+            <a>
+              [matt@mcw-portfolio ~]$
+            </a>
+          </Link>
         </div>
         <nav id="nav">
           <Link href="/about">

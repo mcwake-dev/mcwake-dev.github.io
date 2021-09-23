@@ -10,7 +10,7 @@ export default function Home() {
       <section id={styles.banner}>
         <header>hello world!</header>
         <p>
-          I'm <Link href="/about"><a>Matt</a></Link>, and <Link href="/projects"><a>I solve problems</a></Link>.
+          I&apos;m <Link href="/about"><a>Matt</a></Link>, and <Link href="/projects"><a>I solve problems</a></Link>.
         </p>
       </section>
       <section id={styles.about}>

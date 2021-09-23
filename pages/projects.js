@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import styles from '../components/Projects.module.css';
 
@@ -9,7 +10,7 @@ function ProjectCard({project, slug}) {
     const { cover_image, title, excerpt } = project.frontmatter;
     return (
         <article className={styles.projectCard}>
-            <img src={cover_image} />
+            <Image src={cover_image} alt="" />
             <details>
                 {excerpt}
                 <br />
