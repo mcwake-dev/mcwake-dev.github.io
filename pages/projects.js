@@ -10,7 +10,7 @@ function ProjectCard({project, slug}) {
     const { cover_image, title, excerpt } = project.frontmatter;
     return (
         <article className={styles.projectCard}>
-            <Image src={cover_image} alt="" />
+            <Image src={cover_image} alt="" className="img" />
             <details>
                 {excerpt}
                 <br />
