@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </main>
       <footer id="main-footer">
-        Copyright &copy; Matthew C Wake 2021 - All Rights Reserved - Built using <a href="https://nextjs.org/">Next.js</a>
+        Copyright &copy; Matthew C Wake 2021 - All Rights Reserved - Built using <a href="https://nextjs.org/">Next.js</a> and <a href="https://www.markdownguide.org/basic-syntax/">Markdown</a>
       </footer>
     </div>
   )
