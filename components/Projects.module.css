@@ -35,13 +35,19 @@
     font-size: 1.5rem;
 }
 
-.projectCard img {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
-    overflow: hidden;
+.imageContainer {
+    width: 100%;
+}
+
+.imageContainer > div {
+    position: unset !important;
+}
+
+.image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
 }
 
 .projectCard details {
