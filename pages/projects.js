@@ -13,14 +13,15 @@ function ProjectCard({project, slug}) {
             <div className={styles.imageContainer}>
                 <Image src={cover_image} alt="" layout="fill" className={styles.image} />
             </div>
-            <details>
+            <header className={styles.banner}>{title}</header>
+            <p>
                 {excerpt}
-                <br />
+            </p>
+            <div className={styles.projectLink}>
                 <Link href={`/projects/${project.slug}`}>
                     <a>Read more...</a>
                 </Link>
-            </details>
-            <header>{title}</header>
+            </div>
         </article>
     );
 }

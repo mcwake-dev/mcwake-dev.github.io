@@ -23,16 +23,30 @@
 
 .projectCard {
     margin: 2rem;
-    border-radius: 15px 50px 30px;
+    border-radius: 15px 40px 30px;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.7);
+    position: relative;
 }
 
 .projectCard header {
+    color: var(--blue-highlight);
     text-align: center;
-    padding-top: 1rem;
-    margin-top: -1rem;
     font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.projectCard p {
+    padding: 1rem;
+    padding-top: 0.25rem;
+    margin-bottom: auto;
+}
+
+.projectLink {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .imageContainer {
@@ -48,12 +62,6 @@
     width: 100% !important;
     position: relative !important;
     height: unset !important;
-}
-
-.projectCard details {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
 }
 
 

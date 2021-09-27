@@ -1,5 +1,5 @@
 ---
-title: So Much Work, So Little Time...?
+title: Don't hate the player...
 date: 09/03/2016
 excerpt: Up to 60 members of staff were assigned to completed telephone interviews with people sponsoring overseas travel visa applications. Despite this, regular overtime was needed to even approach meeting the deadline for completion. Managers reprimanded staff for just not working hard enough, but I wasn't convinced...
 cover_image: '/img/projects/busy.jpg'
