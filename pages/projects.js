@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import styles from '../components/Projects.module.css';
 
-function ProjectCard({project, slug}) {
+function ProjectCard({project}) {
     const { cover_image, title, excerpt } = project.frontmatter;
     return (
         <article className={styles.projectCard}>
