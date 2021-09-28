@@ -59,30 +59,6 @@ a:hover {
     font-size: 2rem;
 }
 
-@media only screen and (max-width: 950px) {    
-    #main-header {
-        grid-template-areas: "brand"
-                             "nav";
-    }
-
-    #brand {
-        text-align: center;
-    }
-
-    #nav {
-        margin-top: 2rem;
-    }
-    
-    #nav a {
-        text-align: center;
-        background: rgba(0, 0, 0, 0.7);
-    }
-
-    #main {
-        margin-top: 8rem;
-    }
-}
-
 #brand {
     grid-area: brand;
 }
@@ -109,4 +85,44 @@ a:hover {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {    
+    #main-header {
+        grid-template-areas: "brand"
+                             "nav";
+    }
+
+    #brand {
+        text-align: center;
+    }
+
+    #nav {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    #nav a {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    #main {
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {  
+    #main-header {
+        position: relative;
+    }
+
+    #main {
+        margin-top: 15rem;
+    }
+
+    #nav a {
+        display: block;
+        font-size: 1.2rem;
+    }
 }

@@ -4,19 +4,6 @@
                          "mission personal";
 }
 
-@media only screen and (max-width: 950px) {    
-    #container {
-        grid-template-areas: "banner"
-                             "mission"
-                             "personal";
-        margin-bottom: 5rem;
-    }
-
-    #container section {
-        padding: 2rem;
-    }
-}
-
 #banner {
     grid-area: banner;
     margin-bottom: 2rem;
@@ -43,6 +30,20 @@
 
 #mission, #personal {
     padding: 2rem;
+}
+
+@media only screen and (max-width: 950px) {    
+    #container {
+        padding-top: 3rem;
+        grid-template-areas: "banner"
+                             "mission"
+                             "personal";
+        margin-bottom: 5rem;
+    }
+
+    #container section {
+        padding: 2rem;
+    }
 }
 
 
