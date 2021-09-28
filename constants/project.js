@@ -1,0 +1,1 @@
+export const PROJECT_MARKDOWN_PATH = 'projects';

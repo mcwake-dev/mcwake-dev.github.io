@@ -1,0 +1,1 @@
+export const BLOG_MARKDOWN_PATH = 'blog_entries';

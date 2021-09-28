@@ -1,10 +1,9 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
 import marked from 'marked';
 import Link from 'next/link';
 
 import styles from '../../components/Project.module.css';
+import { generateStaticPaths, importMarkdownFileContent } from '../../shared/libs/importMarkdown';
+import { PROJECT_MARKDOWN_PATH } from '../../constants/project';
 
 export default function Project({ frontmatter: { title, excerpt, tech_used }, content }) {
     return (
@@ -34,13 +33,7 @@ export default function Project({ frontmatter: { title, excerpt, tech_used }, co
 }
 
 export async function getStaticPaths() {
-    const files = fs.readdirSync(path.join('projects'))
-
-    const paths = files.map(filename => ({
-        params: {
-            slug: filename.replace('.md', '')
-        }
-    }))
+    const paths = generateStaticPaths(PROJECT_MARKDOWN_PATH);
 
     return {
         paths,
@@ -49,13 +42,9 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-    const markdownWithMeta = fs.readFileSync(path.join('projects', slug + '.md'), 'utf-8');
-    const { data: frontmatter, content } = matter(markdownWithMeta);
+    const markdownContents = importMarkdownFileContent(PROJECT_MARKDOWN_PATH, slug);
+    
     return {
-        props: {
-            frontmatter,
-            slug,
-            content
-        }
+        props: markdownContents
     }
 }
