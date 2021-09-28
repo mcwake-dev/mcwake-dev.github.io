@@ -16,7 +16,7 @@ export default function External() {
                 <article>
                     <header>GitHub</header>
                     <p>
-                        My current coding projects are stored on Github. Please check out the Issues and Project kanban boards to see what I'm actively working on.
+                        My current coding projects are stored on Github. Please check out the Issues and Project kanban boards to see what I&apos;m actively working on.
                     </p>
                     <footer>
                         <Link href="https://github.com/mcwake-dev">
@@ -41,7 +41,7 @@ export default function External() {
                 <article>
                     <header>FreeCodeCamp</header>
                     <p>
-                        I've completed many of the exercises on FreeCodeCamp. Have a look here.
+                        I&apos;ve completed many of the exercises on FreeCodeCamp. Have a look here.
                     </p>
                     <footer>
                         <Link href="https://www.freecodecamp.org/fcc2ad59fa6-ae7f-4044-b8f5-8bcc81813930">
