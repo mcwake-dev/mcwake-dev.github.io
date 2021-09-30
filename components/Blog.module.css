@@ -1,0 +1,23 @@
+#container {
+    display: grid;
+    grid-template-areas: "banner"
+                         "entries";
+}
+
+#banner {
+    grid-area: banner;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#banner header {
+    font-size: 5rem;
+    color: var(--blue-highlight);
+}
+
+#entries {
+    grid-area: entries;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 3rem;
+}

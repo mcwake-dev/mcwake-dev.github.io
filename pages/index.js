@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faSave, faLink } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faSave, faBlog, faLink } from '@fortawesome/free-solid-svg-icons'
 
 import styles from '../components/Index.module.css'
 
@@ -30,6 +30,16 @@ export default function Home() {
             <br />
             <br />
             Projects
+          </a>
+        </Link>
+      </section>
+      <section id={styles.blog}>
+        <Link href="/blog">
+          <a>
+            <FontAwesomeIcon icon={faBlog} size="10x" />
+            <br />
+            <br />
+            Blog
           </a>
         </Link>
       </section>

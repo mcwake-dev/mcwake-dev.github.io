@@ -27,11 +27,6 @@ export default function External() {
                 <article>
                     <header>CodeWars</header>
                     <p>
-                        Badge: 
-                        <div className={styles.imageContainer}>
-                            <Image src="https://www.codewars.com/users/mcsqwu/badges/micro" alt="CodeWars badge" />
-                        </div>
-                        <br />
                         I am actively completing katas on CodeWars. Take a look at my solutions!
                     </p>
                     <footer>

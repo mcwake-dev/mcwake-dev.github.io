@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard';
 import { importMarkdownFrontMatter } from '../shared/libs/importMarkdown';
 import { PROJECT_MARKDOWN_PATH } from '../constants/project';
 
-export default function Projects({projects}) {
+export default function Projects({ projects }) {
     return (
         <div id={styles.container}>
             <section id={styles.banner}>
@@ -22,8 +22,8 @@ export async function getStaticProps() {
     const markdownData = importMarkdownFrontMatter(PROJECT_MARKDOWN_PATH);
 
     return {
-      props: {
-        projects: markdownData
-      }
+        props: {
+            projects: markdownData
+        }
     }
-  }
+}

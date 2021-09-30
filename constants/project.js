@@ -1,1 +1,1 @@
-export const PROJECT_MARKDOWN_PATH = 'projects';
+export const PROJECT_MARKDOWN_PATH = 'md/projects';

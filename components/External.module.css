@@ -35,11 +35,3 @@
     padding-top: 2rem;
     padding-left: 2rem;
 }
-
-.imageContainer {
-    width: 100%;
-}
-
-.imageContainer > div {
-    position: unset !important;
-}

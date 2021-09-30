@@ -36,6 +36,9 @@ function MyApp({ Component, pageProps }) {
           <Link href="/projects">
             <a>Projects</a>
           </Link>
+          <Link href="/blog">
+            <a>Blog</a>
+          </Link>
           <Link href="/external">
             <a>External</a>
           </Link>

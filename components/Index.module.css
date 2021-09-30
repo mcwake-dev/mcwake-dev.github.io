@@ -1,7 +1,7 @@
 #container {
     display: grid;
-    grid-template-areas: "banner banner   banner"
-                         "about  projects external";
+    grid-template-areas: "banner banner   banner   banner"
+                         "about  projects blog     external";
     margin-top: 5rem;
 }
 
@@ -10,6 +10,7 @@
         grid-template-areas: "banner"
                              "about"
                              "projects"
+                             "blog"
                              "external";
         margin-bottom: 5rem;
     }
@@ -31,6 +32,11 @@
 
 #projects {
     grid-area: projects;
+    justify-items: center;
+}
+
+#blog {
+    grid-area: blog;
     justify-items: center;
 }
 
