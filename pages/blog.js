@@ -5,13 +5,20 @@ import styles from "../components/Blog.module.css";
 import BlogCard from '../components/BlogCard';
 
 export default function Blog({entries}) {
+    const sortedEntries = entries.sort((a, b) => {
+        const aDate = new Date(a.frontmatter.date_published, "dd/mm/yyyy");
+        const bDate = new Date(b.frontmatter.date_published, "dd/mm/yyyy");
+
+        return bDate.getUTCMilliseconds() - aDate.getUTCMilliseconds();
+    });
+
     return (
         <div id={styles.container}>
             <section id={styles.banner}>
                 <header>Blog</header>
             </section>
             <main id={styles.entries}>
-                {entries.map((entry, index) => (
+                {sortedEntries.map((entry, index) => (
                     <BlogCard key={index} entry={entry} />
                 ))}
             </main>
