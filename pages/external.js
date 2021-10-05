@@ -40,6 +40,18 @@ export default function External() {
                     <p>
                         I&apos;ve completed many of the exercises on FreeCodeCamp. Have a look here.
                     </p>
+                    <ul>
+                        <li>
+                            <Link href="https://www.freecodecamp.org/certification/fcc2ad59fa6-ae7f-4044-b8f5-8bcc81813930/responsive-web-design">
+                                <a>Responsive Web Design Certification</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://www.freecodecamp.org/certification/fcc2ad59fa6-ae7f-4044-b8f5-8bcc81813930/javascript-algorithms-and-data-structures">
+                                <a>JavaScript Data Structures and Algorithms Certification</a>
+                            </Link>
+                        </li>
+                    </ul>
                     <footer>
                         <Link href="https://www.freecodecamp.org/fcc2ad59fa6-ae7f-4044-b8f5-8bcc81813930">
                             <a>My FreeCodeCamp Profile</a>
