@@ -1,5 +1,6 @@
 :root {
   --title-font: "Qahiri", sans-serif;
+  --main-font: "Source Sans Pro", sans-serif;
   --text-light: #d3d3d3;
   --highlight-colour: #950740;
   --border-colour: #c3073f;
@@ -12,8 +13,13 @@
 body {
   background: #1a1a1d;
   color: var(--text-light);
-  margin-left: 1rem;
-  margin-right: 1rem;
+  font-family: var(--main-font);
+  margin: 0;
+}
+
+main {
+  padding: 1rem;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -41,6 +47,7 @@ nav a {
   padding: 0.5rem;
   border: 2px solid var(--border-colour);
   border-radius: 20px;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -50,4 +57,20 @@ nav a:hover {
 main a {
   text-decoration: none;
   color: var(--border-colour);
+  overflow-x: hidden;
+}
+
+#more-listening {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: -1rem;
 }
