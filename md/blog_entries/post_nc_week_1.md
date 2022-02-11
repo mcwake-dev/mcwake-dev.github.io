@@ -10,7 +10,7 @@ tags: northcoders
 Last week, I completed the Northcoders Web Development Bootcamp. This has been a fun, challenging, 13 week course where despite my previous experience I have learned and been pushed to learn many many new things. But I don't plan to stop there! My overall goals at this stage are:
 
 1. Get a job
-2. Restore my fitness after recovering from my neck injury
+2. Keep coding!
 
 # Front End Project Tweaks
 
