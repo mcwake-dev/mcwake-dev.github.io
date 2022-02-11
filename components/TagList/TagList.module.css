@@ -1,11 +1,9 @@
 .tag {
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: var(--blue-highlight);
-    color: white;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    white-space: nowrap;
+  border-radius: 20px;
+  background-color: var(--blue-highlight);
+  color: white;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
