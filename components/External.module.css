@@ -1,0 +1,37 @@
+#container {
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 950px) {    
+    #container {
+        grid-template-areas: "banner"
+                             "mission"
+                             "personal";
+        margin-bottom: 5rem;
+    }
+
+    #container section {
+        padding: 2rem;
+    }
+}
+
+#banner {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#banner header {
+    font-size: 5rem;
+    color: var(--blue-highlight);
+}
+
+#externalLinks header {
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: var(--blue-highlight);
+}
+
+#externalLinks a {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}

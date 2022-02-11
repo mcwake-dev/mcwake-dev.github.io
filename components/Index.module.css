@@ -1,0 +1,80 @@
+#container {
+    display: grid;
+    grid-template-areas: "banner banner   banner   banner"
+                         "about  projects blog     external";
+    margin-top: 5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+    #container {
+        grid-template-areas: "banner banner"
+                             "about  projects"
+                             "blog   external";
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {    
+    #container {
+        grid-template-areas: "banner"
+                             "about"
+                             "projects"
+                             "blog"
+                             "external";
+        margin-bottom: 5rem;
+    }
+
+    #container section {
+        padding: 2rem;
+    }
+}
+
+#banner {
+    grid-area: banner;
+    margin-bottom: 2rem;
+}
+
+#about {
+    grid-area: about;
+    justify-items: center;
+}
+
+#projects {
+    grid-area: projects;
+    justify-items: center;
+}
+
+#blog {
+    grid-area: blog;
+    justify-items: center;
+}
+
+#external {
+    grid-area: external;
+    justify-items: center;
+}
+
+#banner header {
+    font-size: 5rem;
+    color: var(--blue-highlight);
+}
+
+#banner p {
+    font-size: 2rem;
+}
+
+#container section {
+    text-align: center;
+}
+
+#container a {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.bigIcon {
+    font-size: 5rem;
+}
+
+  
+  

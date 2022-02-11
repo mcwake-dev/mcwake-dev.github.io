@@ -1,0 +1,49 @@
+#container {
+    display: grid;
+    grid-template-areas: "banner  banner"
+                         "mission personal";
+}
+
+#banner {
+    grid-area: banner;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#banner header {
+    font-size: 5rem;
+    color: var(--blue-highlight);
+}
+
+#mission {
+    grid-area: mission;
+}
+
+#mission header, #personal header {
+    font-size: 2rem;
+    color: var(--blue-highlight);
+}
+
+#personal {
+    grid-area: personal;
+}
+
+#mission, #personal {
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 950px) {    
+    #container {
+        padding-top: 3rem;
+        grid-template-areas: "banner"
+                             "mission"
+                             "personal";
+        margin-bottom: 5rem;
+    }
+
+    #container section {
+        padding: 2rem;
+    }
+}
+
+

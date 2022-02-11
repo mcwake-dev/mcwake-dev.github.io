@@ -1,0 +1,23 @@
+#container {
+    margin-top: 18rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+#banner {
+    padding: 1rem;
+}
+
+#banner header {
+    text-align: center;
+    font-size: 5rem;
+    color: var(--blue-highlight);
+}
