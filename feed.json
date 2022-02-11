@@ -1,0 +1,27 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Matthew C Wake&#x27;s Portfolio",
+    "description": "",
+    "home_page_url": "https://mcwake-dev.github.io",
+    "feed_url": "https://mcwake-dev.github.io/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "Matthew C Wake"
+    },
+    "items": [
+        {
+            "id": "https://mcwake-dev.github.io/in-defence-of-a-cms.html",
+            "url": "https://mcwake-dev.github.io/in-defence-of-a-cms.html",
+            "title": "In Defence of a CMS",
+            "summary": "Like many coders, I feel like I should do everything myself. Hand code every stylesheet, write every library. Any less feels like cheating. But ultimately purpose of this blog is not to demonstrate that I can write a blog engine. In fact, anyone with about five&hellip;",
+            "content_html": "<p>Like many coders, I feel like I should do <em>everything</em> myself. Hand code every stylesheet, write every library. Any less feels like cheating. But ultimately purpose of this blog is not to demonstrate that I can write a blog engine. In fact, anyone with about five minutes and Google can find a tutorial for writing a blog engine. This isn't 2002, a blog isn't that impressive or exciting to anyone who might want to hire me.</p>\n<p>What needs to be impressive or exciting isn't my blog, but what I write about on it. So I'd much rather focus my efforts on adding peer to peer audio and video to my group project, or trying out the antithesis of all current front-end frameworks, htmx.org. Or I can endlessly tweak some CSS and demonstrate I can do basic MVC with Express...which I already have a project for!</p>\n<p>So, I will discard my guilt at using Publii to write my blog, and get on with doing something interesting for both writer and reader alike!</p>",
+            "author": {
+                "name": "Matthew C Wake"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-02-11T19:08:54+00:00",
+            "date_modified": "2022-02-11T19:08:54+00:00"
+        }
+    ]
+}
